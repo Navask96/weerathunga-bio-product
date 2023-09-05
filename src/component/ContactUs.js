@@ -1,10 +1,11 @@
 import React from "react";
 import contact from '../images/contact.jpg'
+import { RouteNames } from "../constants/RouteNames";
 
 const ContactUs = () => {
   return (
     <>
-      <section className="bg-lime-400 py-20 lg:py-[120px] overflow-hidden relative z-10 rounded-sm">
+      <section className="bg-lime-400 py-20 lg:py-[120px] overflow-hidden relative z-10 rounded-sm" id={RouteNames.ContactUs}>
         <div className="container">
           <div className="flex flex-wrap -mx-4 lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">

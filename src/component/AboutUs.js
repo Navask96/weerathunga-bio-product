@@ -1,9 +1,10 @@
 import React from 'react';
 import green from '../images/green_sceen.jpg'
+import { RouteNames } from '../constants/RouteNames';
 
 const AboutUs = () => {
   return (
-    <section className="py-16 rounded-md bg-lime-200">
+    <section className="py-16 rounded-md bg-lime-200" id={RouteNames.AboutUs}>
       <div className="container mx-auto">
         <div className="flex flex-col items-center md:flex-row">
           <div className="text-white md:w-1/2 md:text-black">

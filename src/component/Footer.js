@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../images/Logo_3-removebg.png'
+import logo from '../images/Logo_3-removebg.png';
+import { RouteNames } from '../constants/RouteNames';
 const Footer = () => {
   return (
     <footer className="bg-white rounded dark:bg-gray-900">
@@ -25,13 +26,13 @@ const Footer = () => {
               </h2>
               <ul className="font-medium text-gray-500 dark:text-gray-400">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href={`#${RouteNames.Products}`} className="hover:underline">
                     Products
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href={`#${RouteNames.AboutUs}`}
                     className="hover:underline"
                   >
                     About Us
