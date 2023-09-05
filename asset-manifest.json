@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/homepage/static/css/main.5c8a4f8d.css",
-    "main.js": "/homepage/static/js/main.f256071c.js",
-    "static/js/787.e7a7bae4.chunk.js": "/homepage/static/js/787.e7a7bae4.chunk.js",
-    "static/media/green_sceen.jpg": "/homepage/static/media/green_sceen.c7eeb631594d123b28fa.jpg",
-    "static/media/Organic_Tea.jpg": "/homepage/static/media/Organic_Tea.3e27b142cecc0b9c1d40.jpg",
-    "static/media/driedbanana.jpg": "/homepage/static/media/driedbanana.a4d89755bd51cd2e4506.jpg",
-    "static/media/paddy.jpg": "/homepage/static/media/paddy.f9086a66f3f7ead108ed.jpg",
-    "static/media/aloevera.jpg": "/homepage/static/media/aloevera.f4cb969898bb690512d4.jpg",
-    "static/media/apple.jpg": "/homepage/static/media/apple.2da14279d6fca3e6b58e.jpg",
-    "static/media/Logo_3-removebg.png": "/homepage/static/media/Logo_3-removebg.61a07c73b8b4f456a734.png",
-    "static/media/contact.jpg": "/homepage/static/media/contact.009fd145b8320802ed29.jpg",
-    "static/media/istockphoto-1317287403-612x612.jpg": "/homepage/static/media/istockphoto-1317287403-612x612.b88a3f8030e327880cad.jpg",
-    "static/media/groun_nut.jpeg": "/homepage/static/media/groun_nut.d12ab760b015bc1331b3.jpeg",
-    "index.html": "/homepage/index.html",
-    "main.5c8a4f8d.css.map": "/homepage/static/css/main.5c8a4f8d.css.map",
-    "main.f256071c.js.map": "/homepage/static/js/main.f256071c.js.map",
-    "787.e7a7bae4.chunk.js.map": "/homepage/static/js/787.e7a7bae4.chunk.js.map"
+    "main.css": "/homepageweerathunga-bio-product/static/css/main.5c8a4f8d.css",
+    "main.js": "/homepageweerathunga-bio-product/static/js/main.03acdcbd.js",
+    "static/js/787.e7a7bae4.chunk.js": "/homepageweerathunga-bio-product/static/js/787.e7a7bae4.chunk.js",
+    "static/media/green_sceen.jpg": "/homepageweerathunga-bio-product/static/media/green_sceen.c7eeb631594d123b28fa.jpg",
+    "static/media/Organic_Tea.jpg": "/homepageweerathunga-bio-product/static/media/Organic_Tea.3e27b142cecc0b9c1d40.jpg",
+    "static/media/driedbanana.jpg": "/homepageweerathunga-bio-product/static/media/driedbanana.a4d89755bd51cd2e4506.jpg",
+    "static/media/paddy.jpg": "/homepageweerathunga-bio-product/static/media/paddy.f9086a66f3f7ead108ed.jpg",
+    "static/media/aloevera.jpg": "/homepageweerathunga-bio-product/static/media/aloevera.f4cb969898bb690512d4.jpg",
+    "static/media/apple.jpg": "/homepageweerathunga-bio-product/static/media/apple.2da14279d6fca3e6b58e.jpg",
+    "static/media/Logo_3-removebg.png": "/homepageweerathunga-bio-product/static/media/Logo_3-removebg.61a07c73b8b4f456a734.png",
+    "static/media/contact.jpg": "/homepageweerathunga-bio-product/static/media/contact.009fd145b8320802ed29.jpg",
+    "static/media/istockphoto-1317287403-612x612.jpg": "/homepageweerathunga-bio-product/static/media/istockphoto-1317287403-612x612.b88a3f8030e327880cad.jpg",
+    "static/media/groun_nut.jpeg": "/homepageweerathunga-bio-product/static/media/groun_nut.d12ab760b015bc1331b3.jpeg",
+    "index.html": "/homepageweerathunga-bio-product/index.html",
+    "main.5c8a4f8d.css.map": "/homepageweerathunga-bio-product/static/css/main.5c8a4f8d.css.map",
+    "main.03acdcbd.js.map": "/homepageweerathunga-bio-product/static/js/main.03acdcbd.js.map",
+    "787.e7a7bae4.chunk.js.map": "/homepageweerathunga-bio-product/static/js/787.e7a7bae4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c8a4f8d.css",
-    "static/js/main.f256071c.js"
+    "static/js/main.03acdcbd.js"
   ]
 }
