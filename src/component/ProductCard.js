@@ -13,7 +13,7 @@ const ProductCard = ({ id, image, title, description }) => {
       <div>
         <div className="relative overflow-hidden rounded-t-lg" style={{ height: '200px' }}>
           <img
-            className={`absolute top-0 left-0 object-cover w-full h-full ${hover && `scale-[1.05] overflow-hidden duration-300 ease-in-out`}`}
+            className={`absolute top-0 left-0 object-cover w-full h-full ${hover && `scale-[1.05] overflow-hidden duration-500 ease-in-out`}`}
             src={image}
             alt=""
           />
