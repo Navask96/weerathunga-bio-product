@@ -24,10 +24,10 @@ const Header = () => {
   }, []);
   return (
     <nav
-      className={`bg-white rounded border-spacing-2 border-gray-200 dark:bg-gray-900 ${
+      className={`bg-whiten rouded-bl rounded-br border-spacing-2 border-gray-200 dark:bg-gray-900 ${
         isScrolled
           ? "fixed top-0 left-0 right-0 shadow-lg z-50 bg-opacity-100"
-          : "rounded-lg"
+          : "rounded-br rounded-bl"
       }`}
     >
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
@@ -40,7 +40,7 @@ const Header = () => {
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-bl rounded-br md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-default"
           aria-expanded="false"
         >

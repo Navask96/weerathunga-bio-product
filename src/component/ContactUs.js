@@ -1,11 +1,47 @@
-import React from "react";
-import contact from '../images/contact.jpg'
+import React, { useState, useEffect } from "react";
 import { RouteNames } from "../constants/RouteNames";
 
 const ContactUs = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const { name, email, message } = formData;
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission here, e.g., sending data to a server
+    setIsSubmitted(true);
+    console.log(formData);
+
+    setTimeout(() => {
+      setIsSubmitted(false);
+    }, 2000);
+  };
+
+  useEffect(() => {
+    // Clear the message when the component unmounts
+    return () => {
+      clearTimeout();
+    };
+  }, []);
   return (
     <>
-      <section className="bg-lime-400 py-20 lg:py-[120px] overflow-hidden relative z-10 rounded-sm" id={RouteNames.ContactUs}>
+      <section
+        className="bg-lime-400 py-20 lg:py-[120px] overflow-hidden relative z-10 rounded-sm"
+        id={RouteNames.ContactUs}
+      >
         <div className="container">
           <div className="flex flex-wrap -mx-4 lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -17,8 +53,13 @@ const ContactUs = () => {
                   GET IN TOUCH WITH US
                 </h2>
                 <p className="px-3 text-base leading-relaxed mb-9 text-body-color">
-                At Weerathunga Bio Product, our goal is to make your life healthy. We are trying to give better products those who want freshly and cleanly. Whether you want the healthy life, supreme taste or something just defferent, Weerathunga Bio Product has your answer.
-We believe that you are your best accessory. This is why we offer a full-service experience including trust, better products and good customer services.
+                  At Weerathunga Bio Product, our goal is to make your life
+                  healthy. We are trying to give better products those who want
+                  freshly and cleanly. Whether you want the healthy life,
+                  supreme taste or something just defferent, Weerathunga Bio
+                  Product has your answer. We believe that you are your best
+                  accessory. This is why we offer a full-service experience
+                  including trust, better products and good customer services.
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -36,7 +77,15 @@ We believe that you are your best accessory. This is why we offer a full-service
                       Our Location
                     </h4>
                     <p className="text-base text-body-color">
-                      Weerathunga Bio Products Enterprise, Yoda Kandiya, Sri Lanka.
+                      <a
+                        className="inline-block hover:underline hover:scale-105"
+                        href="https://www.google.com/maps?q=Weerathunga+Bio+Products+Enterprise,+Yoda+Kandiya,+Sri+Lanka"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Weerathunga Bio Products Enterprise, Yoda Kandiya, Sri
+                        Lanka.
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -58,7 +107,14 @@ We believe that you are your best accessory. This is why we offer a full-service
                       Phone Number
                     </h4>
                     <p className="text-base text-body-color">
-                    (+94) 76 079 1242
+                      <a
+                        className="inline-block hover:underline hover:scale-105"
+                        href="https://wa.me/94760791242" // Replace with the WhatsApp number you want to redirect to
+                        target="_blank" // Open in a new tab/window
+                        rel="noopener noreferrer" // Recommended for security
+                      >
+                        (+94) 76 079 1242
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -78,7 +134,12 @@ We believe that you are your best accessory. This is why we offer a full-service
                       Email Address
                     </h4>
                     <p className="text-base text-body-color">
-                    bioweerathunga59@gmail.com
+                      <a
+                        className="inline-block hover:underline hover:scale-105"
+                        href="mailto:bioweerathunga59@gmail.com"
+                      >
+                        bioweerathunga59@gmail.com
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -86,7 +147,58 @@ We believe that you are your best accessory. This is why we offer a full-service
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="relative p-8 bg-white rounded-lg shadow-lg sm:p-12">
-                <img src ={contact}/>
+                <div className="w-full max-w-md mx-auto">
+                  <h2 className="mb-4 text-3xl font-bold">Contact Us</h2>
+                  <p className="mb-8 text-gray-600">
+                    Please provide your email and message below.
+                  </p>
+
+                  <form onSubmit={handleSubmit}>
+                    <ContactInputBox
+                      type="text"
+                      name="name"
+                      placeholder="Your Name"
+                      value={name}
+                      onChange={handleInputChange}
+                    />
+
+                    <ContactInputBox
+                      type="email"
+                      name="email"
+                      placeholder="Your Email"
+                      value={email}
+                      onChange={handleInputChange}
+                    />
+
+                    <ContactTextArea
+                      row={4}
+                      placeholder="Your Message"
+                      name="message"
+                      value={message}
+                      onChange={handleInputChange}
+                    />
+
+                    <div className="mt-6">
+                      <button
+                        type="submit"
+                        className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-green-600 focus:ring-4 focus:outline-none hover:scale-[1.05] duration-300 ease-in-out focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-600 dark:focus:ring-green-600"
+                      >
+                        Send
+                      </button>
+                    </div>
+                  </form>
+                  <div className="success-message">
+                    {isSubmitted && (
+                      <div className="fixed top-0 bottom-0 left-0 right-0 z-50 flex items-center justify-center">
+                        <div className="p-4 text-white bg-green-500 rounded shadow-lg">
+                          <p>
+                            Done! Your form has been successfully submitted.
+                          </p>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
                 <div>
                   <span className="absolute -top-10 -right-9 z-[-1]">
                     <svg
