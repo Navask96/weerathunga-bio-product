@@ -150,7 +150,7 @@ const ContactUs = () => {
                 <div className="w-full max-w-md mx-auto">
                   <h2 className="mb-4 text-3xl font-bold">Contact Us</h2>
                   <p className="mb-8 text-gray-600">
-                    Please provide your email and message below.
+                  Taste the essence of purity and health with every purchase from Us.
                   </p>
 
                   <form onSubmit={handleSubmit}>
