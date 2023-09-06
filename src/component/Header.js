@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import logo from "../images/Logo_3-removebg.png";
 import { RouteNames } from "../constants/RouteNames";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-
+  const location = useLocation();
   // Add a scroll event listener to toggle the "isScrolled" state
   useEffect(() => {
     const handleScroll = () => {
@@ -31,12 +32,12 @@ const Header = () => {
       }`}
     >
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
-        <a href={logo} className="flex items-center">
+        <p className="flex items-center">
           <img src={logo} className="h-8 mr-3" alt="Weerathunga Logo" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="self-center text-2xl font-semibold cursor-pointer whitespace-nowrap dark:text-white">
             Weerathunga Bio Products
           </span>
-        </a>
+        </p>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
@@ -72,31 +73,36 @@ const Header = () => {
                 Home
               </Link>
             </li>
-            <li>
-              <a
-                href={`#${RouteNames.AboutUs}`}
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                About Us
-              </a>
-            </li>
-            <li>
-              <a
-                href={`#${RouteNames.Products}`}
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Products
-              </a>
-            </li>
-            <li>
-              <a
-                href={`#${RouteNames.ContactUs}`}
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Contact
-              </a>
-            </li>
-            <li></li>
+            {location.pathname === RouteNames.Home ? (
+              <>
+                <li>
+                  <AnchorLink
+                    href={`#${RouteNames.AboutUs}`}
+                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >
+                    About Us
+                  </AnchorLink>
+                </li>
+                <li>
+                  <AnchorLink
+                    href={`#${RouteNames.Products}`}
+                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >
+                    Products
+                  </AnchorLink>
+                </li>
+                <li>
+                  <AnchorLink
+                    href={`#${RouteNames.ContactUs}`}
+                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >
+                    Contact
+                  </AnchorLink>
+                </li>
+              </>
+            ) : (
+              <></>
+            )}
           </ul>
         </div>
       </div>
