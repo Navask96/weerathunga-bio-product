@@ -52,10 +52,10 @@ const Carousel = () => {
               className="absolute top-0 left-0 block object-cover w-full h-full blur-sm"
               alt={`Image ${index + 1}`}
             />
-            <div className="absolute inset-0 flex items-center justify-center w-full mx-auto">
-              <div className="w-8/12 p-4 mx-auto bg-transparent rounded-lg backdrop-blur-lg">
+                   <div className="absolute inset-0 flex items-center justify-center w-full mx-auto">
+              <div className="w-11/12 p-4 mx-auto bg-transparent rounded-lg md:w-8/12 backdrop-blur-lg">
                 <h2
-                  className="w-full font-serif text-center text-white text-7xl md:text-5xl sm:text-2xl"
+                  className="w-full font-serif text-center text-black text-7xl md:text-3xl sm:text-2xl md:leading-snug"
                 >
                   {imageTexts[index]}
                 </h2>

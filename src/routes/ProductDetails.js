@@ -24,7 +24,7 @@ function ProductDetails() {
           </div>
           <div className="md:order-1">
             <h2 className="mb-4 text-2xl font-bold">{product?.title}</h2>
-            <p className="text-gray-600">{product?.detail_description}</p>
+            <p className="text-lg leading-loose text-justify text-gray-600">{product?.detail_description}</p>
           </div>
         </div>
       </div>

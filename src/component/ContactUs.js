@@ -52,7 +52,8 @@ const ContactUs = () => {
                 <h2 className="px-3 mb-6 text-[32px] font-bold uppercase text-dark sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   GET IN TOUCH WITH US
                 </h2>
-                <p className="px-3 text-base leading-relaxed mb-9 text-body-color">
+                <p className="px-3 text-lg leading-loose text-justify mb-9">
+
                   At Weerathunga Bio Product, our goal is to make your life
                   healthy. We are trying to give better products those who want
                   freshly and cleanly. Whether you want the healthy life,
@@ -62,7 +63,7 @@ const ContactUs = () => {
                   including trust, better products and good customer services.
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
-                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px] sm:max-w-[70px]">
+                  <div className="mr-4 sm:mr-6 flex h-[60px] w-[60px] sm:w-[70px] max-w-[60px] sm:max-w-[70px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px]">
                     <svg
                       width={24}
                       height={24}
@@ -90,7 +91,7 @@ const ContactUs = () => {
                   </div>
                 </div>
                 <div className="mb-8 flex w-full max-w-[370px]">
-                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px] sm:max-w-[70px]">
+                  <div className="mr-4 sm:mr-6 flex h-[60px] w-[60px] sm:w-[70px] max-w-[60px] sm:max-w-[70px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px]">
                     <svg
                       width={24}
                       height={26}
@@ -119,7 +120,7 @@ const ContactUs = () => {
                   </div>
                 </div>
                 <div className="mb-8 flex w-full max-w-[370px]">
-                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px] sm:max-w-[70px]">
+                  <div className="mr-4 sm:mr-6 flex h-[60px] w-[60px] sm:w-[70px] max-w-[60px] sm:max-w-[70px] items-center justify-center overflow-hidden rounded bg-primary bg-opacity-5 text-primary sm:h-[70px]">
                     <svg
                       width={28}
                       height={19}
