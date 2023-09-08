@@ -7,7 +7,7 @@ const AboutUs = () => {
     <section className="py-16 rounded-md bg-lime-200" id={RouteNames.AboutUs}>
       <div className="container mx-auto">
         <div className="flex flex-col items-center md:flex-row">
-          <div className="text-white md:w-1/2 md:text-black">
+          <div className="text-black md:w-1/2 md:text-black">
             <h2 className="mb-6 text-4xl font-semibold">About Us</h2>
             <p className="text-lg leading-loose">
             WEERATHUNGA BIO PRODUCTS has been serving the Sri Lanka since 2022. Founded by Mr. Nalin Weerathunga, WEERATHUNGA BIO PRODUCTS provides best services to improve everyone's health and feel their Healthy Life. Our staff of nine employers is here to support your choice and unlock your thrue ambition. 

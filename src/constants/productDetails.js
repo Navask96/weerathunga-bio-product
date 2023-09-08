@@ -23,7 +23,7 @@ export const productDetails = [
     {
       id: 3,
       image: driedbanana,
-      title: 'Sun-Dried Bananas',
+      title: 'Dried Bananas',
       description: 'Enjoy the naturally sweet and chewy goodness of our sun-dried bananas, a healthy snack for all ages.',
       detail_description:"Sun-dried bananas are a delightful and nutritious snack made by dehydrating ripe bananas under the sun's warmth. This natural preservation method transforms ordinary bananas into a concentrated burst of flavor and sweetness. The process involves slicing ripe bananas into thin rounds or strips before laying them out to bask in the sun. Over time, the sun's gentle rays remove moisture from the fruit, intensifying its taste and creating a chewy, candy-like texture.The resulting sun-dried bananas are a superb combination of tropical sweetness with a subtle tanginess. They offer a concentrated banana flavor, reminiscent of banana bread or banana custard, making them a favorite among those seeking a healthier alternative to sugary snacks. Packed with natural sugars, fiber, and essential vitamins and minerals like potassium, sun-dried bananas provide a satisfying energy boost while contributing to overall well-being. Beyond their delicious taste and nutritional value, sun-dried bananas are incredibly versatile. They make a fantastic on-the-go snack, trail mix ingredient, or a sweet addition to cereals, yogurt, and baked goods. Moreover, they are a convenient way to enjoy the essence of bananas year-round, capturing the essence of sunny days in every bite. Whether enjoyed as a standalone treat or incorporated into various culinary creations, sun-dried bananas are a testament to the simple yet delightful magic of sun-powered food preservation.",
     },

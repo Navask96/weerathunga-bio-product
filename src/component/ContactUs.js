@@ -45,7 +45,7 @@ const ContactUs = () => {
         <div className="container">
           <div className="flex flex-wrap -mx-4 lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
-              <div className="mb-12 max-w-[570px] lg:mb-0 ml-20">
+              <div className="mb-12 max-w-[570px] lg:mb-0 lg:ml-20 sm:ml-2">
                 <span className="block px-3 mb-4 text-base font-semibold text-primary">
                   Contact Us
                 </span>
