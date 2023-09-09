@@ -3,9 +3,13 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import logo from "../images/Logo_3-removebg.png";
 import { RouteNames } from "../constants/RouteNames";
 import { Link, useLocation } from "react-router-dom";
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to control the mobile menu
+
   const location = useLocation();
+
   // Add a scroll event listener to toggle the "isScrolled" state
   useEffect(() => {
     const handleScroll = () => {
@@ -23,9 +27,14 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav
-      className={`bg-whiten rouded-bl rounded-br border-spacing-2 border-gray-200 dark:bg-gray-900 ${
+      className={`bg-whiten rounded-bl rounded-br border-spacing-2 border-gray-200 dark:bg-gray-900 ${
         isScrolled
           ? "fixed top-0 left-0 right-0 shadow-lg z-50 bg-opacity-100"
           : "rounded-br rounded-bl"
@@ -43,7 +52,8 @@ const Header = () => {
           type="button"
           className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-bl rounded-br md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-default"
-          aria-expanded="false"
+          aria-expanded={isMenuOpen ? "true" : "false"}
+          onClick={toggleMenu}
         >
           <span className="sr-only">Open main menu</span>
           <svg
@@ -62,8 +72,13 @@ const Header = () => {
             />
           </svg>
         </button>
-        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <div
+          className={`${
+            isMenuOpen ? "block" : "hidden"
+          } w-full md:block md:w-auto mt-2 md:mt-0`} // Adjust the top margin for mobile menu
+          id="navbar-default"
+        >
+          <ul className="flex flex-col p-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:flex-row md:space-x-8 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <Link
                 to={RouteNames.Home}
@@ -94,7 +109,7 @@ const Header = () => {
                 <li>
                   <AnchorLink
                     href={`#${RouteNames.ContactUs}`}
-                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark-text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
                     Contact
                   </AnchorLink>
