@@ -22,7 +22,7 @@ const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const subject = "Contact Us Form Submission";
-    const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+    const body = {};
     const mailtoLink = `mailto:Weerathungabioproducts@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   
     // Open the default email client with the mailto link
