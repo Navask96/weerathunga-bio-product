@@ -144,9 +144,9 @@ const ContactUs = () => {
                     <p className="text-base text-body-color">
                       <a
                         className="inline-block hover:underline hover:scale-105"
-                        href="mailto:Weerathungabioproducts@gmail.com"
+                        href="mailto:weerathungabioproducts@gmail.com"
                       >
-                        Weerathungabioproducts@gmail.com
+                        weerathungabioproducts@gmail.com
                       </a>
                     </p>
                   </div>
