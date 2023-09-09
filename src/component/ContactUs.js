@@ -21,14 +21,21 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here, e.g., sending data to a server
+    const subject = "Contact Us Form Submission";
+    const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+    const mailtoLink = `mailto:Weerathungabioproducts@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  
+    // Open the default email client with the mailto link
+    window.location.href = mailtoLink;
+  
     setIsSubmitted(true);
     console.log(formData);
-
+  
     setTimeout(() => {
       setIsSubmitted(false);
     }, 2000);
   };
+  
 
   useEffect(() => {
     // Clear the message when the component unmounts
