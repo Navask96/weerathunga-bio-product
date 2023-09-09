@@ -55,7 +55,7 @@ const Carousel = () => {
                    <div className="absolute inset-0 flex items-center justify-center w-full mx-auto">
               <div className="w-11/12 p-4 mx-auto bg-transparent rounded-lg md:w-8/12 backdrop-blur-lg">
                 <h2
-                  className="w-full font-serif text-center text-black text-7xl md:text-3xl sm:text-2xl md:leading-snug"
+                  className="w-full font-serif text-center text-black text-7xl md:text-3xl sm:text-2xl md:leading-snug lg:text-4xl xl:text-5xl"
                 >
                   {imageTexts[index]}
                 </h2>
