@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/weerathunga-bio-product/static/css/main.7066d96f.css",
-    "main.js": "/weerathunga-bio-product/static/js/main.e9a13d5c.js",
+    "main.css": "/weerathunga-bio-product/static/css/main.0032892a.css",
+    "main.js": "/weerathunga-bio-product/static/js/main.ecf7ccb3.js",
     "static/js/787.e7a7bae4.chunk.js": "/weerathunga-bio-product/static/js/787.e7a7bae4.chunk.js",
     "static/media/green_sceen.jpg": "/weerathunga-bio-product/static/media/green_sceen.c7eeb631594d123b28fa.jpg",
     "static/media/Organic_Tea.jpg": "/weerathunga-bio-product/static/media/Organic_Tea.3e27b142cecc0b9c1d40.jpg",
@@ -13,12 +13,12 @@
     "static/media/istockphoto-1317287403-612x612.jpg": "/weerathunga-bio-product/static/media/istockphoto-1317287403-612x612.b88a3f8030e327880cad.jpg",
     "static/media/groun_nut.jpeg": "/weerathunga-bio-product/static/media/groun_nut.d12ab760b015bc1331b3.jpeg",
     "index.html": "/weerathunga-bio-product/index.html",
-    "main.7066d96f.css.map": "/weerathunga-bio-product/static/css/main.7066d96f.css.map",
-    "main.e9a13d5c.js.map": "/weerathunga-bio-product/static/js/main.e9a13d5c.js.map",
+    "main.0032892a.css.map": "/weerathunga-bio-product/static/css/main.0032892a.css.map",
+    "main.ecf7ccb3.js.map": "/weerathunga-bio-product/static/js/main.ecf7ccb3.js.map",
     "787.e7a7bae4.chunk.js.map": "/weerathunga-bio-product/static/js/787.e7a7bae4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7066d96f.css",
-    "static/js/main.e9a13d5c.js"
+    "static/css/main.0032892a.css",
+    "static/js/main.ecf7ccb3.js"
   ]
 }

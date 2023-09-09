@@ -8,7 +8,7 @@ const AboutUs = () => {
       <div className="container mx-auto">
         <div className="flex flex-col items-center md:flex-row">
           <div className="text-black md:w-1/2 md:text-black">
-            <h2 className="mb-6 text-4xl font-semibold">About Us</h2>
+            <h2 className="mb-6 text-4xl font-semibold text-center md:text-left">About Us</h2>
             <p className="text-lg leading-loose text-justify">
               WEERATHUNGA BIO PRODUCTS has been serving Sri Lanka since 2022. Founded by Mr. Nalin Weerathunga, WEERATHUNGA BIO PRODUCTS provides the best services to improve everyone's health and feel their Healthy Life. Our staff of nine employers is here to support your choice and unlock your true ambition.
               We've been featured in numerous buyers including England, USA, Australia, and looking for other countries also. Our employers have appeared in different areas. Our products are used for medical purposes and daily needs.
