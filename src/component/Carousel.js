@@ -16,6 +16,9 @@ const Carousel = () => {
   const numImages = images.length;
   const autoChangeInterval = 5000; // Change image every 5 seconds
 
+  const isSmallScreen = window.innerWidth <= 640; // Adjust the breakpoint as needed
+  const marginTop = isSmallScreen ? '100px' : '0';
+
   // Function to go to the next image
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % numImages);
@@ -36,7 +39,8 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div id="controls-carousel" className="relative w-full" data-carousel="static">
+    <div id="controls-carousel" className="relative w-full" data-carousel="static" style={{marginTop}}
+    >
       {/* Carousel wrapper */}
       <div className="relative h-screen overflow-hidden rounded-lg min-h-[300px] sm:min-h-[400px]">
         {images.map((src, index) => (
