@@ -17,7 +17,7 @@ const Carousel = () => {
   const autoChangeInterval = 5000; // Change image every 5 seconds
 
   const isSmallScreen = window.innerWidth <= 640; // Adjust the breakpoint as needed
-  const marginTop = isSmallScreen ? '100px' : '0';
+  const marginTop = isSmallScreen ? '10px' : '0';
 
   // Function to go to the next image
   const nextImage = () => {
@@ -39,10 +39,14 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div id="controls-carousel" className="relative w-full" data-carousel="static" style={{marginTop}}
+    <div
+      id="controls-carousel"
+      className="relative w-full sm:h-100px"
+      data-carousel="static"
+      style={{ marginTop }}
     >
       {/* Carousel wrapper */}
-      <div className="relative h-screen overflow-hidden rounded-lg min-h-[300px] sm:min-h-[400px]">
+      <div className="relative h-100hv overflow-hidden rounded-lg min-h-[300px] sm:h-[400px]">
         {images.map((src, index) => (
           <div
             key={index}
@@ -56,11 +60,9 @@ const Carousel = () => {
               className="absolute top-0 left-0 block object-cover w-full h-full blur-sm"
               alt={`Image ${index + 1}`}
             />
-            <div className="absolute inset-0 flex items-center justify-center w-full mx-auto">
-              <div className="w-11/12 p-4 mx-auto bg-transparent rounded-lg md:w-8/12 backdrop-blur-lg">
-                <h2
-                  className="w-full font-serif text-center text-black text-7xl md:text-3xl sm:text-xl md:leading-snug lg:text-4xl xl:text-5xl"
-                >
+            <div className="absolute inset-0 flex items-center justify-center w-full mx-auto backdrop-blur-sm">
+              <div className={`w-10/12 p-4 mx-auto bg-transparent rounded-lg ${isSmallScreen ? 'text-3xl' : 'text-5xl'}`}>
+                <h2 className="w-full font-serif text-center text-black">
                   {imageTexts[index]}
                 </h2>
               </div>
