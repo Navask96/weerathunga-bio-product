@@ -16,6 +16,8 @@ const Carousel = () => {
   const numImages = images.length;
   const autoChangeInterval = 5000; // Change image every 5 seconds
 
+  const marginTopSmMd = 'mt-4 sm:mt-8 md:mt-8';
+
   const isSmallScreen = window.innerWidth <= 640; // Adjust the breakpoint as needed
   const marginTop = isSmallScreen ? '10px' : '0';
 
@@ -41,12 +43,12 @@ const Carousel = () => {
   return (
     <div
       id="controls-carousel"
-      className="relative w-full sm:h-100px"
+      className={`relative w-full sm:h-100px ${marginTopSmMd}`}
       data-carousel="static"
       style={{ marginTop }}
     >
       {/* Carousel wrapper */}
-      <div className="relative h-100hv overflow-hidden rounded-lg min-h-[300px] sm:h-[400px]">
+      <div className="relative h-100hv overflow-hidden rounded-lg min-h-[420px] sm:h-[520px]">
         {images.map((src, index) => (
           <div
             key={index}
