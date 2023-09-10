@@ -38,7 +38,7 @@ const Carousel = () => {
   return (
     <div id="controls-carousel" className="relative w-full" data-carousel="static">
       {/* Carousel wrapper */}
-      <div className="relative h-screen overflow-hidden rounded-lg">
+      <div className="relative h-screen overflow-hidden rounded-lg min-h-[300px] sm:min-h-[400px]">
         {images.map((src, index) => (
           <div
             key={index}
@@ -52,10 +52,10 @@ const Carousel = () => {
               className="absolute top-0 left-0 block object-cover w-full h-full blur-sm"
               alt={`Image ${index + 1}`}
             />
-                   <div className="absolute inset-0 flex items-center justify-center w-full mx-auto">
+            <div className="absolute inset-0 flex items-center justify-center w-full mx-auto">
               <div className="w-11/12 p-4 mx-auto bg-transparent rounded-lg md:w-8/12 backdrop-blur-lg">
                 <h2
-                  className="w-full font-serif text-center text-black text-7xl md:text-3xl sm:text-2xl md:leading-snug lg:text-4xl xl:text-5xl"
+                  className="w-full font-serif text-center text-black text-7xl md:text-3xl sm:text-xl md:leading-snug lg:text-4xl xl:text-5xl"
                 >
                   {imageTexts[index]}
                 </h2>
