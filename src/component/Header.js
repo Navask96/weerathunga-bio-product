@@ -34,16 +34,12 @@ const Header = () => {
 
   return (
     <nav
-      className={`bg-whiten rounded-bl rounded-br border-spacing-2 border-gray-200 dark:bg-gray-900 ${
-        isScrolled
-          ? "fixed top-0 left-0 right-0 shadow-lg z-50 bg-opacity-100"
-          : "rounded-br rounded-bl"
-      }`}
+      className={`bg-gray-900 rounded-bl rounded-br border-spacing-2 border-gray-700 fixed top-0 left-0 right-0 shadow-lg z-50`}
     >
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
         <p className="flex items-center">
           <img src={logo} className="h-8 mr-3" alt="Weerathunga Logo" />
-          <span className="self-center text-2xl font-semibold cursor-pointer whitespace-nowrap dark:text-white">
+          <span className="self-center text-2xl font-semibold text-white cursor-pointer whitespace-nowrap">
             Weerathunga Bio Products
           </span>
         </p>
@@ -78,11 +74,11 @@ const Header = () => {
           } w-full md:block md:w-auto mt-2 md:mt-0`} // Adjust the top margin for mobile menu
           id="navbar-default"
         >
-          <ul className="flex flex-col p-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:flex-row md:space-x-8 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="flex flex-col p-4 font-medium md:p-0 md:flex-row md:space-x-8">
             <li>
               <Link
                 to={RouteNames.Home}
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-700"
                 aria-current="page"
               >
                 Home
@@ -93,7 +89,7 @@ const Header = () => {
                 <li>
                   <AnchorLink
                     href={`#${RouteNames.AboutUs}`}
-                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-700"
                   >
                     About Us
                   </AnchorLink>
@@ -101,7 +97,7 @@ const Header = () => {
                 <li>
                   <AnchorLink
                     href={`#${RouteNames.Products}`}
-                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-700"
                   >
                     Products
                   </AnchorLink>
@@ -109,7 +105,7 @@ const Header = () => {
                 <li>
                   <AnchorLink
                     href={`#${RouteNames.ContactUs}`}
-                    className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark-text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                    className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-700"
                   >
                     Contact
                   </AnchorLink>

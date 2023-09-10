@@ -4,8 +4,8 @@ import { RouteNames } from '../constants/RouteNames';
 
 const AboutUs = () => {
   return (
-    <section className="py-16 rounded-md bg-lime-200" id={RouteNames.AboutUs}>
-      <div className="container mx-auto">
+    <section className="py-16 rounded-md bg-lime-200" id={RouteNames.AboutUs} >
+      <div className="container px-4 mx-auto">
         <div className="flex flex-col items-center md:flex-row">
           <div className="text-black md:w-1/2 md:text-black">
             <h2 className="mb-6 text-4xl font-semibold text-center md:text-left">About Us</h2>
